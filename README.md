@@ -3,14 +3,14 @@ $ git checkout json-c-0.12
 
 # build instructions (amd64)
     $ sh autogen.sh  
-    $ ./configure --prefix=${PWD}/install --exec-prefix=${PWD}/install/amd64  
+    $ ac_cv_func_malloc_0_nonnull=yes ac_cv_func_realloc_0_nonnull=yes ./configure --prefix=${PWD}/install --exec-prefix=${PWD}/install/amd64  
     $ make clean  
     $ make  
     $ make install  
 
 # build instructions (arm)  
     $ sh autogen.sh  
-    $ ./configure --prefix=${PWD}/install --exec-prefix=${PWD}/install/arm --build=x86_64-linux --host=arm-linux-gnueabi CC=arm-linux-gnueabi-gcc-4.7  
+    $ ac_cv_func_malloc_0_nonnull=yes ac_cv_func_realloc_0_nonnull=yes ./configure --prefix=${PWD}/install --exec-prefix=${PWD}/install/arm --build=x86_64-linux --host=arm-linux-gnueabi CC=arm-linux-gnueabi-gcc-4.7  
     $ make clean  
     $ make  
     $ make install
