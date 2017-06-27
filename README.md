@@ -2,7 +2,7 @@
 $ git checkout json-c-0.12
 
 # build instructions
-$ sh autogen.sh
-$ ./configure --prefix=${PWD}/install
-$ make
-$ make install
+$ sh autogen.sh  
+$ ./configure --prefix=${PWD}/install  
+$ make  
+$ make install  
